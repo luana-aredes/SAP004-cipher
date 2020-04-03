@@ -1,14 +1,62 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
-    <script src="index.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main>
+    <form>
+      <fieldset>
+        <label for="name" class="nameuser">Insira o seu nome aqui:</label>
+        <input type="text" id="name" class="nameuser" required />
+      </fieldset>
+
+      <fieldset>
+        <legend class="titleoptions">Para quem voce deseja enviar sua mensagem?</legend>
+        <select class="options">
+          <option> Ana Maria</option>
+          <option> Carlos Santos </option>
+          <option> jõao da Silva</option>
+          <option> José SIlverio</option>
+          <option> Bruna Costa</option>
+          <option> Larissa Lessa</option>
+          <option> Gabriel Donato </option>
+          <option> Mary Arezzo </option>
+          <option> Augusto Vieira </option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <label for="txtmensage" class="mensagem">Mensagem:
+        </label>
+        <textarea cols="60" rows="10" id="txtmensage" class="message" required></textarea>
+      </fieldset>
+
+      <div>
+        <label for="offsetnumber" class="offset">Qual deslocamento desejado?</label>
+        <input type="text" id="offsetnumber" class="offset" required>
+      </div>
+      <div>
+        <button id="buttoncipher" type="button" value="Criptografar mensagem">
+          Criptografar mensagem
+        </button>
+
+        <button id="buttondecipher" type="button" value="Descriptografar mensagem">
+          Descriptografar mensagem
+        </button>
+      </div>
+
+      <div>
+        <input type="submit" id="buttonsubmit" value="Enviar mensagem" />
+      </div>
+    </form>
+  </main>
+
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
