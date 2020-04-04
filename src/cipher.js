@@ -1,8 +1,12 @@
 const cipher = {
 
   encode: (offset, message) => {
-    if (message.length <= 0) {
-      return;
+    if (typeof offset != "number" || offset <= 0) {
+      throw TypeError("Offset deve ser numérico e maior que zero.");
+    }
+
+    if (typeof message != "string" || message.length <= 0) {
+      throw TypeError("Message deve ser um texto e possuir mais do que 1 caractere");
     }
 
     let initialMessage = message;
@@ -19,28 +23,39 @@ const cipher = {
     return cipheredMessage;
   },
 
-  decode: (offsettodecipher, messagetodedecipher) => {
-    if (messagetodedecipher.length <= 0) {
-      return;
+  decode: (offset, message) => {
+    if (typeof offset != "number" || offset <= 0) {
+      throw TypeError("Offset deve ser numérico e maior que zero.");
     }
 
-    let messageToDecipher = messagetodedecipher;
-    let letterOffset = offsettodecipher;
+    if (typeof message != "string" || message.length <= 0) {
+      throw TypeError("Message deve ser um texto e possuir mais do que 1 caractere");
+    }
 
     let decipheredMessage = "";
 
-    for (var contador = 0; contador < messageToDecipher.length; contador++) {
-      if ((letterPosition - 65) < letterOffset) {
-        let letterPosition = messageToDecipher.charCodeAt(contador);
-        let letterPositionOffset = (((letterPosition - 65) - letterOffset) + 26) + 65;
-        let letterDecipher = String.fromCharCode(letterPositionOffset);
+    for (var counter = 0; counter < message.length; counter++) {
+      let letterPosition = message.charCodeAt(counter);
+      let letterPositionOffset = (letterPosition - 65) - offset;
+
+      if (letterPositionOffset <= 0) {
+
+        while (letterPositionOffset < 0) {
+          letterPositionOffset = (letterPositionOffset + 26);
+        }
+
+        let letterPositionOffset2 = (letterPositionOffset % 26) + 65;
+
+        let letterDecipher = String.fromCharCode(letterPositionOffset2);
+
+        decipheredMessage += letterDecipher;
       } else {
-        let letterPosition = messageToDecipher.charCodeAt(contador);
-        let letterPositionOffset = (((letterPosition - 65) - letterOffset) % 26) + 65;
+        let letterPosition = message.charCodeAt(contador);
+        let letterPositionOffset = (((letterPosition - 65) - offset) % 26) + 65;
         let letterDecipher = String.fromCharCode(letterPositionOffset);
+        decipheredMessage += letterDecipher;
       }
 
-      decipheredMessage += letterDecipher;
     }
     return decipheredMessage;
   }
