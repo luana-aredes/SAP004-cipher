@@ -36,27 +36,11 @@ const cipher = {
 
     for (var counter = 0; counter < message.length; counter++) {
       let letterPosition = message.charCodeAt(counter);
-      let letterPositionOffset = (letterPosition - 65) - offset;
-
-      if (letterPositionOffset <= 0) {
-
-        while (letterPositionOffset < 0) {
-          letterPositionOffset = (letterPositionOffset + 26);
-        }
-
-        let letterPositionOffset2 = (letterPositionOffset % 26) + 65;
-
-        let letterDecipher = String.fromCharCode(letterPositionOffset2);
-
-        decipheredMessage += letterDecipher;
-      } else {
-        let letterPosition = message.charCodeAt(contador);
-        let letterPositionOffset = (((letterPosition - 65) - offset) % 26) + 65;
-        let letterDecipher = String.fromCharCode(letterPositionOffset);
-        decipheredMessage += letterDecipher;
-      }
-
+      let letterPositionOffset = (((letterPosition + 65) - offset) % 26) + 65;
+      let letterDecipher = String.fromCharCode(letterPositionOffset);
+      decipheredMessage += letterDecipher;
     }
+
     return decipheredMessage;
   }
 
