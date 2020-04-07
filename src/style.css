@@ -1,59 +1,121 @@
-.nameuser {
-  display: block;
-
+body {
+  background-image: url(fundo_galaxia.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgba(9, 2, 48, 0.815);
+  font-weight: bold;
+  font-size: 18px;
 }
 
-.message {
-  display: block;
+div p {
+  color: beige;
+  font-size: 50px;
+}
+
+form {
+  background-color: rgba(223, 221, 221, 0.4);
+  width: 400px;
+  height: auto;
+  padding: 10px 0px;
+  border-radius: 10px;
+  margin: 150px 25px auto auto;
 }
 
 fieldset {
   border: 0;
 }
 
-main {
-  width: 550px;
-  height: auto;
-  padding: 10px 20px;
+.nameuser {
+  display: block;
+  border-radius: 8px;
+}
 
-  border: 2px solid coral;
-  margin: 100px 30%;
+.options {
+  border-radius: 8px;
+}
 
+.message {
+  display: block;
+  border-radius: 8px;
+}
+
+.offset {
+  text-align: center;
+  font-size: 16px;
+}
+
+#offsetnumber {
+  display: block;
+  text-align: left;
+  font-size: 16px;
+  border-radius: 8px;
+  width: 50px;
+}
+
+fieldset button {
+  display: inline;
+}
+
+#buttoncipher {
+  width: 180px;
+  height: 30px;
+  border-radius: 8px;
+  background-color: rgba(45, 163, 192, 0.836);
+  border-color: rgba(45, 163, 192, 0.836);
+  color: rgb(9, 2, 48);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#buttondecipher {
+  width: 180px;
+  height: 30px;
+  border-radius: 8px;
+  background-color: rgba(45, 163, 192, 0.836);
+  border-color: rgba(45, 163, 192, 0.836);
+  color: rgba(9, 2, 48, 0.815);
+  font-size: 12px;
+  font-weight: bold;
 }
 
 #buttonsubmit {
   width: 150px;
   height: 30px;
   display: block;
-
   margin: 20px auto 10px;
   padding: 3px 4px;
+  border-color: rgba(194, 8, 123, 0.836);
+  border-radius: 8px;
+  background-color: rgba(194, 8, 123, 0.836);
+  color: rgba(9, 2, 48, 0.815);
+  font-weight: bold;
 }
 
-#buttoncipher {
+#animacaofoguete {
   width: 200px;
-  height: 30px;
-  margin: 10px 15px 0 55px;
-  padding: 3px 4px;
+  height: 200px;
+  vertical-align: bottom;
+  margin: auto auto auto 100px;
 }
 
-#buttondecipher {
-  width: 200px;
-  height: 30px;
-  margin: 10px 55px 0 15px;
-  padding: 3px 4px;
+#animacao {
+  position: relative;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 
-.offsetnumber {
-  display: block;
-  text-align: left;
-  font-size: 16px;
-  margin: 10px 10px;
+@keyframes example {
+  0% {
+    bottom: 0px;
+  }
+
+  100% {
+    bottom: 900px;
+  }
 }
 
-#offset {
-  width: 50px;
-  height: 30px;
+footer p {
   text-align: center;
-  font-size: 18px;
+  color: beige;
 }

@@ -9,6 +9,9 @@
 
 <body>
   <main>
+    <div>
+      <p> Envie sua mensagem <br> com segurança</p>
+    </div>
     <form>
       <fieldset>
         <label for="name" class="nameuser">Insira o seu nome aqui:</label>
@@ -16,31 +19,15 @@
       </fieldset>
 
       <fieldset>
-        <legend class="titleoptions">Para quem voce deseja enviar sua mensagem?</legend>
-        <select class="options">
-          <option> Ana Maria</option>
-          <option> Carlos Santos </option>
-          <option> jõao da Silva</option>
-          <option> José SIlverio</option>
-          <option> Bruna Costa</option>
-          <option> Larissa Lessa</option>
-          <option> Gabriel Donato </option>
-          <option> Mary Arezzo </option>
-          <option> Augusto Vieira </option>
-        </select>
+        <label for="txtmensage" class="mensagem">Mensagem: </label>
+        <textarea cols="43" rows="10" id="txtmensage" class="message" required></textarea>
       </fieldset>
 
       <fieldset>
-        <label for="txtmensage" class="mensagem">Mensagem:
-        </label>
-        <textarea cols="60" rows="10" id="txtmensage" class="message" required></textarea>
-      </fieldset>
-
-      <div>
         <label for="offsetnumber" class="offset">Qual deslocamento desejado?</label>
-        <input type="text" id="offsetnumber" class="offset" required>
-      </div>
-      <div>
+        <input type="text" id="offsetnumber" class="offset" required />
+      </fieldset>
+      <fieldset>
         <button id="buttoncipher" type="button" value="Criptografar mensagem">
           Criptografar mensagem
         </button>
@@ -48,13 +35,20 @@
         <button id="buttondecipher" type="button" value="Descriptografar mensagem">
           Descriptografar mensagem
         </button>
-      </div>
+      </fieldset>
 
       <div>
         <input type="submit" id="buttonsubmit" value="Enviar mensagem" />
       </div>
     </form>
+    <div id="animacao">
+      <p> <img src="foguete4.png" id="animacaofoguete"> </p>
+    </div>
   </main>
+
+  <footer>
+    <p> &copy; Copyright Luana Arêdes- 2020</p>
+  </footer>
 
   <script src="index.js" type="module"></script>
 </body>
