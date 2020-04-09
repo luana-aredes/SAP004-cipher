@@ -43,7 +43,7 @@ Foram utilizadas HTML 5, CSS 3 e JavaScript, sendo este separado em index.js e c
 
 O leyout do projeto foi pensado para que seja legivel e de facil interpretação pelo usuario. Onde encontra-se do lado direito da tela o formulario, a ser preenchido com nome do usuario, mensagem a ser criptografada/descriptografada e a chave de deslocamento desejada.
 E no lado esquerdo da tela, a animação com um pequeno foqute remetend a idéia que a mensagem esteja sendo lançada para o outro usuario de foquete e com segurança.
-
+! [] (foguetinhovoando.gif)
 ## 5. Considerações finais
 
 O produto para estar concluído precisa de algumas implementações, que no caso não serão feitas agora. O intuito é ajudar a pessoas que estão passando por essa situação e consigam sair dessa situação que prejudica não só o relacionamento, mas a saúde emocional e física. E lembre-se de ajudar alguém que está passando por essa situação, é facil enfrentar, mas sozinho tudo piora.
