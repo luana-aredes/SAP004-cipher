@@ -43,8 +43,8 @@ Inserir seu nome, a mensagem na qual deseja descriptografar e a chave usadada pa
 
 O leyout do projeto foi pensado para que seja legivel e de facil interpretação pelo usuario. Onde encontra-se do lado direito da tela o formulario, a ser preenchido com nome do usuario, mensagem a ser criptografada/descriptografada e a chave de deslocamento desejada.
 E no lado esquerdo da tela, a animação com um pequeno foqute remetendo a idéia que a mensagem esteja sendo enviada através do foguete para o outro usuario e com segurança.
+![Foguete voando](https://github.com/luana-aredes/SAP004-cipher/blob/master/foguetinhovoando.gif)
 
-! [](foguetinhovoando.gif)
 
 ## 4. Linguagem Utilizada
 
