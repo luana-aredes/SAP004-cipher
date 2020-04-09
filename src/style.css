@@ -56,23 +56,12 @@ fieldset button {
   display: inline;
 }
 
-#buttoncipher {
+.button {
   width: 180px;
   height: 30px;
   border-radius: 8px;
   background-color: rgba(45, 163, 192, 0.836);
-  border-color: rgba(45, 163, 192, 0.836);
-  color: rgb(9, 2, 48);
-  font-size: 12px;
-  font-weight: bold;
-}
-
-#buttondecipher {
-  width: 180px;
-  height: 30px;
-  border-radius: 8px;
-  background-color: rgba(45, 163, 192, 0.836);
-  border-color: rgba(45, 163, 192, 0.836);
+  border-color: none;
   color: rgba(9, 2, 48, 0.815);
   font-size: 12px;
   font-weight: bold;

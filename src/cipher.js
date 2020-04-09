@@ -2,11 +2,11 @@ const cipher = {
 
   encode: (offset, message) => {
     if (typeof offset != "number" || offset <= 0) {
-      throw TypeError("Offset deve ser numérico e maior que zero.");
+      throw new TypeError("Offset deve ser numérico e maior que zero.");
     }
 
     if (typeof message != "string" || message.length <= 0) {
-      throw TypeError("Message deve ser um texto e possuir mais do que 1 caractere");
+      throw new TypeError("Message deve ser um texto e possuir mais do que 1 caractere");
     }
 
     let initialMessage = message;
@@ -25,11 +25,11 @@ const cipher = {
 
   decode: (offset, message) => {
     if (typeof offset != "number" || offset <= 0) {
-      throw TypeError("Offset deve ser numérico e maior que zero.");
+      throw new TypeError("Offset deve ser numérico e maior que zero.");
     }
 
     if (typeof message != "string" || message.length <= 0) {
-      throw TypeError("Message deve ser um texto e possuir mais do que 1 caractere");
+      throw new TypeError("Message deve ser um texto e possuir mais do que 1 caractere");
     }
 
     let decipheredMessage = "";
