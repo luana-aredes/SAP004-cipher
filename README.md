@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Cifra de César- Mensagem Segura
 
 ## Índice
@@ -54,6 +53,3 @@ Foram utilizadas HTML 5, CSS 3 e JavaScript, sendo este separado em index.js e c
 ## 5. Considerações finais
 
 O produto para estar concluído precisa de algumas implementações, que no caso não serão feitas agora. O objetivo é que o usuário consiga enviar mensagens, sejam elas sigilosas ou não, com segurança e privacidade.
-=======
-# SAP004-cipher
->>>>>>> 3875c2d0897eacfccfddba0bf73efaeb4bdddc95
