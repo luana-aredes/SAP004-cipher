@@ -1,49 +1,76 @@
-const cipher = {
+ const cipher = {
 
-  encode: (offset, message) => {
-    if (typeof offset != "number" || offset <= 0) {
-      throw new TypeError("Offset deve ser numérico e maior que zero.");
-    }
+   encode: (offset, message) => {
+     if (typeof offset != "number" || offset <= 0 || typeof message != "string" || message == "") {
+       throw TypeError("Verifique se os campo estão preenchidos corretamente.");
+     }
 
-    if (typeof message != "string" || message.length <= 0) {
-      throw new TypeError("Message deve ser um texto e possuir mais do que 1 caractere");
-    }
+     let initialMessage = message;
+     let letterOffset = offset;
+     let cipheredMessage = "";
 
-    let initialMessage = message;
-    let letterOffset = offset;
-    let cipheredMessage = "";
+     for (var counter = 0; counter < initialMessage.length; counter++) {
+       let letterPosition = initialMessage.charCodeAt(counter); //posição da letra
+       if (letterPosition >= 65 && letterPosition <= 90) {
+         let letterPositionOffset = (((letterPosition - 65) + letterOffset) % 26) + 65;
+         let letterDecipher = String.fromCharCode(letterPositionOffset);
+         if (letterDecipher != " ") {
+           cipheredMessage += letterDecipher;
+         } else {
+           cipheredMessage += "";
+         }
 
-    for (var contador = 0; contador < initialMessage.length; contador++) {
-      let letterPosition = initialMessage.charCodeAt(contador);
-      let letterPositionOffset = (((letterPosition - 65) + letterOffset) % 26) + 65;
-      let letterDecipher = String.fromCharCode(letterPositionOffset);
-      cipheredMessage += letterDecipher;
-    }
+       } else if (letterPosition >= 97 && letterPosition <= 122) {
+         let letterPositionOffset = (((letterPosition - 97) + letterOffset) % 26) + 97;
+         let letterDecipher = String.fromCharCode(letterPositionOffset);
+         if (letterDecipher != " ") {
+           cipheredMessage += letterDecipher;
+         } else {
+           cipheredMessage += "";
+         }
 
-    return cipheredMessage;
-  },
+       } else {
+         cipheredMessage += String.fromCharCode(letterPosition);
+       }
+     }
+     return cipheredMessage;
+   },
 
-  decode: (offset, message) => {
-    if (typeof offset != "number" || offset <= 0) {
-      throw new TypeError("Offset deve ser numérico e maior que zero.");
-    }
 
-    if (typeof message != "string" || message.length <= 0) {
-      throw new TypeError("Message deve ser um texto e possuir mais do que 1 caractere");
-    }
+   decode: (offset, message) => {
+     if (typeof offset != "number" || offset <= 0 || typeof message != "string" || message == "") {
+       throw TypeError("Por favor, verifique se os campo estão preenchidos corretamente.");
+     }
 
-    let decipheredMessage = "";
+     let decipheredMessage = "";
+     let letterOffset = offset;
 
-    for (var counter = 0; counter < message.length; counter++) {
-      let letterPosition = message.charCodeAt(counter);
-      let letterPositionOffset = (((letterPosition + 65) - offset) % 26) + 65;
-      let letterDecipher = String.fromCharCode(letterPositionOffset);
-      decipheredMessage += letterDecipher;
-    }
+     for (var counter = 0; counter < message.length; counter++) {
+       let letterPosition = message.charCodeAt(counter);
+       if (letterPosition >= 65 && letterPosition <= 90) {
+         let letterPositionOffset = (((letterPosition - 90) - letterOffset) % 26) + 90;
+         let letterDecipher = String.fromCharCode(letterPositionOffset);
+         if (letterDecipher != " ") {
+           decipheredMessage += letterDecipher;
+         } else {
+           decipheredMessage += "";
+         }
 
-    return decipheredMessage;
-  }
+       } else if (letterPosition >= 97 && letterPosition <= 122) {
+         let letterPositionOffset = (((letterPosition - 122) - letterOffset) % 26) + 122;
+         let letterDecipher = String.fromCharCode(letterPositionOffset);
+         if (letterDecipher != " ") {
+           decipheredMessage += letterDecipher;
+         } else {
+           decipheredMessage += "";
+         }
 
-};
+       } else {
+         decipheredMessage += String.fromCharCode(letterPosition);
+       }
+     }
+     return decipheredMessage;
+   }
+ }
 
-export default cipher;
+ export default cipher;

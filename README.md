@@ -1,4 +1,4 @@
-# Cifra de César- Mensagem Segura
+# Cifra de César- Mensagem Segura Para o Espaço
 
 ## Índice
 
@@ -6,7 +6,8 @@
 - [2. Resumo do projeto](#2-resumo-do-projeto)
 - [3. Leyout do projeto](#3-leyout-do-projeto)
 - [4. Linguagem utilizada](#4-objetivos-de-aprendizagem)
-- [5. Considerações finais](#5-considerações-finais)
+- [5. Instalação](#5-Instalação)
+- [6. Considerações finais](#6-considerações-finais)
 
 ---
 
@@ -31,25 +32,43 @@ a cifra de Vigenère, e tem aplicação no sistema ROT13.
 
 ## 2. Resumo do projeto
 
-O produto foi elaborado pensando nas instituições que trabalham com dados sigilosos e precisam manter o sigilo e segurança dos mesmos. Voltado para a comunicação entre tripulantes da estação espacial internacional com os integrantes da base de lançamento espacial do Brasil. O projeto permite que as mensgaens sejam enviadas codificadas, garantido a segurança dos dados e do usuário em questão.
+O produto foi elaborado pensando nas instituições que trabalham com dados sigilosos e precisam manter o sigilo e segurança dos mesmos. Voltado para a comunicação entre os integrantes da base de lançamento espacial do Brasil e os tripulantes da estação espacial internacional. O projeto permite ao usuário enviar mensagens codificadas, garantido a segurança dos dados e do usuário em questão.
+
+Para ter acesso à página de envio de mensagem o usuario deverá fazer o login, utilizando o e-mail e senha cadastrados.
 
 Para criptografar uma mensagem e envia-la, o usuario deverá:
-Inserir seu nome, a mensagem na qual deseja criptografar, a chave de deslocamento desejada e selecionar o nome do destinatário, nos respectivos campos. Após preencher os campos, deverá clicar no botão criptografar, e assim a mensagem criptografada aparecerá no campo "mensagem". Logo após, deverá clicar no botão "Enviar mensagem" e pronto, a mensagem será enviada com segurança ao outr usuário.
+Inserir seu nome, a mensagem na qual deseja criptografar, a chave de deslocamento desejada e selecionar o nome do destinatário, nos respectivos campos. Após preencher os campos, deverá clicar no botão criptografar, e assim a mensagem criptografada aparecerá no campo "mensagem". Logo após, deverá clicar no botão "Enviar mensagem" e pronto, a mensagem será enviada com segurança ao destinatário.
 
 Para descriptografar uma mensagem o usuario deverá:
-Inserir seu nome, a mensagem na qual deseja descriptografar e a chave usadada para criptografar essa mensagem. Depois clicar no botão "descriptografar", então a mensagem descriptografada aparecerá no campo "mensagem". Caso o usuario queira enviar essa mensagem descriptografada para alguem, ele deverá selecionar o destinatario no compo "destinatário" e clicar no botão "enviar mensagem".
+Inserir seu nome, a mensagem na qual deseja descriptografar e a chave usadada para criptografar essa mensagem. Depois clicar no botão "descriptografar", então a mensagem descriptografada aparecerá no campo "mensagem". Caso o usuario queira enviar essa mensagem descriptografada para alguem, ele deverá selecionar o destinatario no campo "destinatário" e clicar no botão "enviar mensagem".
 
 ## 3. Leyout do projeto
 
-O leyout do projeto foi pensado para que seja legivel e de facil interpretação pelo usuario. Onde encontra-se do lado direito da tela o formulario, a ser preenchido com nome do usuario, mensagem a ser criptografada/descriptografada e a chave de deslocamento desejada.
-E no lado esquerdo da tela, a animação com um pequeno foqute remetendo a idéia que a mensagem esteja sendo enviada através do foguete para o outro usuario e com segurança.
+O leyout do projeto foi pensado para que seja legivel e de fácil interpretação pelo usuario.
+Comtem uma tela inicial para o usuario realizar o login, inserindo o e-mail e senha cadastrados. Como mostrado abaixo:
 
-! [](foguetinhovoando.gif)
+! [](home_page.gif)
+
+Após o login, o usuario será direcionado para a tela principal, onde encontra-se do lado direito da tela o formulario, a ser preenchido com nome do usuario, mensagem a ser criptografada/descriptografada, chave de deslocamento desejada e a opção de selecionar o destinatário.
+Ao lado esquerdo da tela possue uma animação com um pequeno foquete, remetendo a idéia de que a mensagem esteja sendo enviada através de um foguete para o outro usuário.
+
+! [](message_page.gif)
 
 ## 4. Linguagem Utilizada
 
-Foram utilizadas HTML 5, CSS 3 e JavaScript, sendo este separado em index.js e cipher.js, onde index.js foram colocadas as funções de botão e o cipher as funções para codificação e decodificação.
+Foram utilizadas HTML 5, CSS 3 e JavaScript, sendo este separado em index.js, cipher.js e home.js, onde index.js foram colocadas as funções de botão, o cipher.js as funções para codificação e decodificação e o home.js as funções de botão e login.
 
-## 5. Considerações finais
+## 5. Instalação
+
+- Instale as dependências do projeto rodando o comando `npm install`. Mas
+  antes disso tenha certeza de ter instalado o [Node.js](https://nodejs.org/)
+  (que inclui o [npm](https://docs.npmjs.com/)).
+- Caso queira, você conseguirá executar os :traffic_light: testes
+  unitários com o comando `npm test`.
+- Para ver a interface do programa no seu servidor local, use o comando `npm start`.
+
+* Para acessar a plataforma, utilize o link:
+
+## 6. Considerações finais
 
 O produto para estar concluído precisa de algumas implementações, que no caso não serão feitas agora. O objetivo é que o usuário consiga enviar mensagens, sejam elas sigilosas ou não, com segurança e privacidade.

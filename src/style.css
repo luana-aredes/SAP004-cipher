@@ -1,110 +1,82 @@
 body {
-  background-image: url(fundo_galaxia.jpg);
-  background-size: cover;
+  background-image: url(fundo_foguete.jpg);
   background-repeat: no-repeat;
+  background-size: 1200px 650px;
   color: rgba(9, 2, 48, 0.815);
   font-weight: bold;
-  font-size: 18px;
-}
-
-div p {
-  color: beige;
-  font-size: 50px;
+  font-size: 25px;
 }
 
 form {
-  background-color: rgba(223, 221, 221, 0.4);
-  width: 400px;
-  height: auto;
+  background-color: rgba(223, 221, 221, 0.5);
+  width: 350px;
+  height: 430px;
   padding: 10px 0px;
   border-radius: 10px;
-  margin: 150px 25px auto auto;
+  margin: 70px auto;
+}
+
+form p {
+  font-size: 35px;
+  color: rgba(9, 2, 48, 0.815);
+  text-align: center;
 }
 
 fieldset {
-  border: 0;
+  border: none;
 }
 
-.nameuser {
+#username {
   display: block;
-  border-radius: 8px;
+  border: none;
+  border-radius: 10px;
+  width: 300px;
+  height: 40px;
+  margin: 8px auto;
+  padding-left: 10px;
+  font-size: 18px;
 }
 
-.options {
-  border-radius: 8px;
-}
-
-.message {
+#password {
   display: block;
-  border-radius: 8px;
+  border: none;
+  border-radius: 10px;
+  width: 300px;
+  height: 40px;
+  margin: 8px auto;
+  padding-left: 10px;
 }
 
-.offset {
-  text-align: center;
-  font-size: 16px;
+div {
+  margin: 15px 85px;
 }
 
-#offsetnumber {
-  display: block;
-  text-align: left;
-  font-size: 16px;
-  border-radius: 8px;
-  width: 50px;
+div a {
+  text-decoration: none;
 }
 
-fieldset button {
-  display: inline;
-}
-
-.button {
+#enterbutton {
   width: 180px;
-  height: 30px;
+  height: 50px;
   border-radius: 8px;
-  background-color: rgba(45, 163, 192, 0.836);
-  border-color: none;
-  color: rgba(9, 2, 48, 0.815);
-  font-size: 12px;
+  background-color: #128CA8;
+  border: none;
+  color: beige;
+  font-size: 20px;
   font-weight: bold;
 }
 
-#buttonsubmit {
-  width: 150px;
-  height: 30px;
-  display: block;
-  margin: 20px auto 10px;
-  padding: 3px 4px;
-  border-color: rgba(194, 8, 123, 0.836);
-  border-radius: 8px;
-  background-color: rgba(194, 8, 123, 0.836);
-  color: rgba(9, 2, 48, 0.815);
-  font-weight: bold;
+#enterbutton:hover {
+  background-color: #11849E;
+  cursor: pointer;
+  transition: 1s all;
 }
 
-#animacaofoguete {
-  width: 200px;
-  height: 200px;
-  vertical-align: bottom;
-  margin: auto auto auto 100px;
-}
 
-#animacao {
-  position: relative;
-  animation-name: example;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes example {
-  0% {
-    bottom: 0px;
-  }
-
-  100% {
-    bottom: 900px;
-  }
-}
-
-footer p {
+#footer {
   text-align: center;
   color: beige;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 50px;
 }

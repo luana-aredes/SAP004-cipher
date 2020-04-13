@@ -1,56 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
-  <meta charset="utf-8" />
-  <title>Caesar Cipher</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <link href="style.css" rel="stylesheet">
+  <title>Página principal - Login</title>
 </head>
 
 <body>
+  <header>
+
+  </header>
+
   <main>
-    <div>
-      <p> Envie sua mensagem <br> com segurança</p>
-    </div>
     <form>
+      <p> Login </p>
+
       <fieldset>
-        <label for="name" class="nameuser">Insira o seu nome aqui:</label>
-        <input type="text" id="name" class="nameuser" required />
+        <label for="username"> Usuário: </label>
+        <input type="email" autocomplete="off" id="username" required />
       </fieldset>
 
       <fieldset>
-        <label for="txtmensage" class="mensagem">Mensagem: </label>
-        <textarea cols="43" rows="10" id="txtmensage" class="message" required></textarea>
-      </fieldset>
-
-      <fieldset>
-        <label for="offsetnumber" class="offset">Qual deslocamento desejado?</label>
-        <input type="text" id="offsetnumber" class="offset" required />
-      </fieldset>
-      <fieldset>
-        <button class="button" type="button" value="Criptografar mensagem">
-          Criptografar mensagem
-        </button>
-
-        <button class="button" type="button" value="Descriptografar mensagem">
-          Descriptografar mensagem
-        </button>
+        <label for="password"> Senha: </label>
+        <input type="password" id="password" size="6" required />
       </fieldset>
 
       <div>
-        <input type="submit" id="buttonsubmit" value="Enviar mensagem" />
+        <button id="enterbutton" type="button" value="Entrar"> Entrar </button>
       </div>
+
+
     </form>
-    <div id="animacao">
-      <p> <img src="foguete4.png" id="animacaofoguete"> </p>
-    </div>
   </main>
 
   <footer>
-    <p> &copy; Copyright Luana Arêdes- 2020</p>
+    <p id="footer"> &copy; Copyright Luana Arêdes- 2020</p>
   </footer>
 
-  <script src="index.js" type="module"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>
