@@ -47,12 +47,12 @@ Inserir seu nome, a mensagem na qual deseja descriptografar e a chave usadada pa
 O leyout do projeto foi pensado para que seja legivel e de fácil interpretação pelo usuario.
 Comtem uma tela inicial para o usuario realizar o login, inserindo o e-mail e senha cadastrados. Como mostrado abaixo:
 
-! [](home_page.gif)
+![Print página inicial- Logi](home_page.gif)
 
 Após o login, o usuario será direcionado para a tela principal, onde encontra-se do lado direito da tela o formulario, a ser preenchido com nome do usuario, mensagem a ser criptografada/descriptografada, chave de deslocamento desejada e a opção de selecionar o destinatário.
 Ao lado esquerdo da tela possue uma animação com um pequeno foquete, remetendo a idéia de que a mensagem esteja sendo enviada através de um foguete para o outro usuário.
 
-! [](message_page.gif)
+![Print página de mensagem](message_page.gif)
 
 ## 4. Linguagem Utilizada
 
