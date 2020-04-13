@@ -67,7 +67,7 @@ Foram utilizadas HTML 5, CSS 3 e JavaScript, sendo este separado em index.js, ci
   unitários com o comando `npm test`.
 - Para ver a interface do programa no seu servidor local, use o comando `npm start`.
 
-* Para acessar a plataforma, utilize o link:
+* Para acessar a plataforma, utilize o link: https://luana-aredes.github.io/SAP004-cipher/
 
 ## 6. Considerações finais
 
