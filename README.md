@@ -34,8 +34,7 @@ a cifra de Vigenère, e tem aplicação no sistema ROT13.
 
 O produto foi elaborado pensando nas instituições que trabalham com dados sigilosos e precisam manter o sigilo e segurança dos mesmos. Voltado para a comunicação entre os integrantes da base de lançamento espacial do Brasil e os tripulantes da estação espacial internacional. O projeto permite ao usuário enviar mensagens codificadas, garantido a segurança dos dados e do usuário em questão.
 
-Para ter acesso à página de envio de mensagem o usuario deverá fazer o login, utilizando o e-mail e senha cadastrados.
-
+Para ter acesso à página de envio de mensagem o usuario deverá fazer o login, utilizando o e-mail e senha cadastrados. **Para teste, poderá ser usuado o USUÁRIO: luana@gmail.com e SENHA: 102030**.
 Para criptografar uma mensagem e envia-la, o usuario deverá:
 Inserir seu nome, a mensagem na qual deseja criptografar, a chave de deslocamento desejada e selecionar o nome do destinatário, nos respectivos campos. Após preencher os campos, deverá clicar no botão criptografar, e assim a mensagem criptografada aparecerá no campo "mensagem". Logo após, deverá clicar no botão "Enviar mensagem" e pronto, a mensagem será enviada com segurança ao destinatário.
 
