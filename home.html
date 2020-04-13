@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style_home.css" />
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <main>
+    <section id="box">
+      <p id="title"> Envie sua mensagem <br> com segurança</p>
+
+      <form>
+        <fieldset>
+          <label for="name" class="nameuser">Insira o seu nome aqui:</label>
+          <input type="text" autocomplete="off" id="name" class="nameuser" required />
+        </fieldset>
+
+        <fieldset>
+          <legend> Escolha o destinatário:</legend>
+          <select id="useroptions">
+            <option class="option"> João Batista Silva</option>
+            <option class="option"> José Marques Rodrigues</option>
+            <option class="option"> Luana Arêdes Costa</option>
+            <option class="option"> Maria Araujo de Moura</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label for="txtmensage" class="menssage">Mensagem: </label>
+          <textarea cols="43" rows="8" id="txtmensage" class="message" required></textarea>
+        </fieldset>
+
+        <fieldset>
+          <label for="offsetnumber" class="offset">Qual deslocamento desejado?</label>
+          <input type="text" autocomplete="off" id="offsetnumber" class="offset" required />
+        </fieldset>
+        <fieldset>
+          <button id="buttoncipher" class="button" type="button" value="Criptografar mensagem">
+            Criptografar Mensagem
+          </button>
+
+          <button id="buttondecipher" class="button" type="button" value="Descriptografar mensagem">
+            Descriptografar Mensagem
+          </button>
+        </fieldset>
+
+        <div>
+          <input type="submit" id="buttonsubmit" value="Enviar mensagem" />
+        </div>
+      </form>
+    </section>
+
+    <img src="foguete.png" id="animacaofoguete">
+  </main>
+
+  <footer>
+    <p id="footer"> &copy; Copyright Luana Arêdes- 2020</p>
+  </footer>
+
+  <script src="home.js" type="module"></script>
+</body>
+
+</html>

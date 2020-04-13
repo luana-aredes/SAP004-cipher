@@ -1,0 +1,82 @@
+body {
+  background-image: url(fundo_foguete.jpg);
+  background-repeat: no-repeat;
+  background-size: 1200px 650px;
+  color: rgba(9, 2, 48, 0.815);
+  font-weight: bold;
+  font-size: 25px;
+}
+
+form {
+  background-color: rgba(223, 221, 221, 0.5);
+  width: 350px;
+  height: 430px;
+  padding: 10px 0px;
+  border-radius: 10px;
+  margin: 70px auto;
+}
+
+form p {
+  font-size: 35px;
+  color: rgba(9, 2, 48, 0.815);
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+}
+
+#username {
+  display: block;
+  border: none;
+  border-radius: 10px;
+  width: 300px;
+  height: 40px;
+  margin: 8px auto;
+  padding-left: 10px;
+  font-size: 18px;
+}
+
+#password {
+  display: block;
+  border: none;
+  border-radius: 10px;
+  width: 300px;
+  height: 40px;
+  margin: 8px auto;
+  padding-left: 10px;
+}
+
+div {
+  margin: 15px 85px;
+}
+
+div a {
+  text-decoration: none;
+}
+
+#enterbutton {
+  width: 180px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #128CA8;
+  border: none;
+  color: beige;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#enterbutton:hover {
+  background-color: #11849E;
+  cursor: pointer;
+  transition: 1s all;
+}
+
+
+#footer {
+  text-align: center;
+  color: beige;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 50px;
+}
