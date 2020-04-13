@@ -28,7 +28,7 @@ function newPage() {
     (username == username3 && password == password3) ||
     (username == username4 && password == password4)
   ) {
-    location.href = "http://localhost:5000/home";
+    location.href = "home.html";
   } else {
     alert("usuário ou senha incorretos");
   }
