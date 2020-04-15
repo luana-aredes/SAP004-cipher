@@ -1,6 +1,3 @@
-let username = "";
-let password = "";
-
 const username1 = "luana@gmail.com";
 const password1 = "102030";
 
@@ -13,14 +10,13 @@ const password3 = "304050";
 const username4 = "jase@gmail.com";
 const password4 = "405060";
 
-let enterbutton = document.getElementById("enterbutton");
-enterbutton.onclick = () => {
-  newPage();
-}
+alert("usuário: luana@gmail.com \n Senha: 102030");
+
+document.getElementById("enterbutton").addEventListener("click", newPage);
 
 function newPage() {
-  username = document.getElementById("username").value;
-  password = document.getElementById("password").value;
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
 
   if (
     (username == username1 && password == password1) ||

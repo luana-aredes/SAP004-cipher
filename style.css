@@ -1,4 +1,4 @@
-body {
+#body {
   background-image: url(fundo_foguete.jpg);
   background-repeat: no-repeat;
   background-size: 1300px 650px;
@@ -7,7 +7,7 @@ body {
   font-size: 25px;
 }
 
-form {
+.form {
   background-color: rgba(223, 221, 221, 0.5);
   width: 350px;
   height: 430px;
@@ -16,7 +16,7 @@ form {
   margin: 70px auto;
 }
 
-form p {
+.login {
   font-size: 35px;
   color: rgba(9, 2, 48, 0.815);
   text-align: center;
@@ -73,7 +73,7 @@ div a {
 }
 
 
-#footer {
+.footer {
   text-align: center;
   color: beige;
   font-size: 16px;

@@ -6,21 +6,20 @@
   <title>Caesar Cipher</title>
   <link rel="stylesheet" href="style_home.css" />
   <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
-
 </head>
 
-<body>
+<body id="body">
   <main>
-    <section id="box">
-      <p id="title"> Envie sua mensagem <br> com segurança</p>
+    <section class="box">
+      <p class="title"> Envie sua mensagem <br> com segurança</p>
 
-      <form>
+      <form class="form">
         <fieldset>
           <label for="name" class="nameuser">Insira o seu nome aqui:</label>
           <input type="text" autocomplete="off" id="name" class="nameuser" required />
         </fieldset>
 
-        <fieldset>
+        <fieldset class="fieldset">
           <legend> Escolha o destinatário:</legend>
           <select id="useroptions">
             <option class="option"> João Batista Silva</option>
@@ -29,16 +28,18 @@
             <option class="option"> Maria Araujo de Moura</option>
           </select>
         </fieldset>
-        <fieldset>
+
+        <fieldset class="fieldset">
           <label for="txtmensage" class="menssage">Mensagem: </label>
           <textarea cols="43" rows="8" id="txtmensage" class="message" required></textarea>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="fieldset">
           <label for="offsetnumber" class="offset">Qual deslocamento desejado?</label>
           <input type="text" autocomplete="off" id="offsetnumber" class="offset" required />
         </fieldset>
-        <fieldset>
+
+        <fieldset class="fieldset">
           <button id="buttoncipher" class="button" type="button" value="Criptografar mensagem">
             Criptografar Mensagem
           </button>
@@ -51,14 +52,16 @@
         <div>
           <input type="submit" id="buttonsubmit" value="Enviar mensagem" />
         </div>
+
       </form>
     </section>
 
-    <img src="foguete.png" id="animacaofoguete">
+    <img src="foguete.png" class="animacaofoguete">
+
   </main>
 
   <footer>
-    <p id="footer"> &copy; Copyright Luana Arêdes- 2020</p>
+    <p class="footer"> &copy; Copyright Luana Arêdes- 2020</p>
   </footer>
 
   <script src="home.js" type="module"></script>

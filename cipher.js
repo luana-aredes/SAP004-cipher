@@ -5,35 +5,24 @@
        throw TypeError("Verifique se os campo estão preenchidos corretamente.");
      }
 
-     let initialMessage = message;
-     let letterOffset = offset;
-     let cipheredMessage = "";
-
-     for (var counter = 0; counter < initialMessage.length; counter++) {
-       let letterPosition = initialMessage.charCodeAt(counter); //posição da letra
+     for (const message of message) {
+       const letterPosition = message.charCodeAt();
+       const letterPositionOffset = "";
+       const letterCipher = String.fromCharCode(letterPositionOffset);
        if (letterPosition >= 65 && letterPosition <= 90) {
-         let letterPositionOffset = (((letterPosition - 65) + letterOffset) % 26) + 65;
-         let letterDecipher = String.fromCharCode(letterPositionOffset);
-         if (letterDecipher != " ") {
-           cipheredMessage += letterDecipher;
-         } else {
-           cipheredMessage += "";
-         }
-
+         letterPositionOffset = (((letterPosition - 65) + offset) % 26) + 65;
        } else if (letterPosition >= 97 && letterPosition <= 122) {
-         let letterPositionOffset = (((letterPosition - 97) + letterOffset) % 26) + 97;
-         let letterDecipher = String.fromCharCode(letterPositionOffset);
-         if (letterDecipher != " ") {
-           cipheredMessage += letterDecipher;
-         } else {
-           cipheredMessage += "";
-         }
-
+         letterPositionOffset = (((letterPosition - 97) + offset) % 26) + 97;
        } else {
-         cipheredMessage += String.fromCharCode(letterPosition);
+         message += String.fromCharCode(letterPosition);
+       }
+       if (letterCipher != " ") {
+         message += letterCipher;
+       } else {
+         message += "";
        }
      }
-     return cipheredMessage;
+     return message;
    },
 
 
@@ -42,34 +31,24 @@
        throw TypeError("Por favor, verifique se os campo estão preenchidos corretamente.");
      }
 
-     let decipheredMessage = "";
-     let letterOffset = offset;
-
-     for (var counter = 0; counter < message.length; counter++) {
-       let letterPosition = message.charCodeAt(counter);
+     for (const message of message) {
+       let letterPosition = message.charCodeAt();
        if (letterPosition >= 65 && letterPosition <= 90) {
-         let letterPositionOffset = (((letterPosition - 90) - letterOffset) % 26) + 90;
-         let letterDecipher = String.fromCharCode(letterPositionOffset);
-         if (letterDecipher != " ") {
-           decipheredMessage += letterDecipher;
-         } else {
-           decipheredMessage += "";
-         }
-
+         const letterPositionOffset = (((letterPosition - 90) - offset) % 26) + 90;
+         var letterDecipher = String.fromCharCode(letterPositionOffset);
        } else if (letterPosition >= 97 && letterPosition <= 122) {
-         let letterPositionOffset = (((letterPosition - 122) - letterOffset) % 26) + 122;
-         let letterDecipher = String.fromCharCode(letterPositionOffset);
-         if (letterDecipher != " ") {
-           decipheredMessage += letterDecipher;
-         } else {
-           decipheredMessage += "";
-         }
-
+         letterPositionOffset = (((letterPosition - 122) - offset) % 26) + 122;
+         letterDecipher = String.fromCharCode(letterPositionOffset);
        } else {
-         decipheredMessage += String.fromCharCode(letterPosition);
+         message += String.fromCharCode(letterPosition);
+       }
+       if (letterDecipher != " ") {
+         message += letterDecipher;
+       } else {
+         message += "";
        }
      }
-     return decipheredMessage;
+     return message;
    }
  }
 
