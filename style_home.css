@@ -1,4 +1,4 @@
-#body {
+.body {
   background-image: url(fundo_foguete.jpg);
   background-size: 100% 100%;
   vertical-align: top;
@@ -38,7 +38,7 @@
   border: none;
 }
 
-.nameuser {
+.name-user {
   display: block;
   border-radius: 8px;
   border: none;
@@ -50,7 +50,7 @@
   padding-left: 10px;
 }
 
-#useroptions {
+.user-options {
   background-color: beige;
   border-radius: 8px;
   width: 210px;
@@ -72,7 +72,7 @@
   border: none;
 }
 
-#offsetnumber {
+#offset-number {
   width: 70px;
   height: 25px;
   text-align: center;
@@ -96,7 +96,7 @@
   transform: scale(1.03);
 }
 
-#buttonsubmit {
+.submit {
   width: 150px;
   height: 30px;
   display: block;
@@ -109,7 +109,7 @@
   font-weight: bold;
 }
 
-#buttonsubmit:hover {
+.submit:hover {
   background-color: #380059;
   cursor: pointer;
   transition: 1s all;
@@ -117,7 +117,7 @@
 }
 
 
-.animacaofoguete {
+.animacao-foguete {
   position: relative;
   animation-name: example;
   animation-duration: 6s;

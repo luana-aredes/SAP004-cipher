@@ -8,20 +8,20 @@
   <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
 </head>
 
-<body id="body">
+<body class="body">
   <main>
     <section class="box">
       <p class="title"> Envie sua mensagem <br> com segurança</p>
-
       <form class="form">
-        <fieldset>
-          <label for="name" class="nameuser">Insira o seu nome aqui:</label>
-          <input type="text" autocomplete="off" id="name" class="nameuser" required />
+
+        <fieldset class="fieldset">
+          <label for="name" class="name-user">Insira o seu nome aqui:</label>
+          <input type="text" autocomplete="off" id="name" class="name-user" required />
         </fieldset>
 
         <fieldset class="fieldset">
           <legend> Escolha o destinatário:</legend>
-          <select id="useroptions">
+          <select class="user-options">
             <option class="option"> João Batista Silva</option>
             <option class="option"> José Marques Rodrigues</option>
             <option class="option"> Luana Arêdes Costa</option>
@@ -35,28 +35,28 @@
         </fieldset>
 
         <fieldset class="fieldset">
-          <label for="offsetnumber" class="offset">Qual deslocamento desejado?</label>
-          <input type="text" autocomplete="off" id="offsetnumber" class="offset" required />
+          <label for="offset-number" class="offset">Qual deslocamento desejado?</label>
+          <input type="text" autocomplete="off" id="offset-number" class="offset" required />
         </fieldset>
 
         <fieldset class="fieldset">
-          <button id="buttoncipher" class="button" type="button" value="Criptografar mensagem">
+          <button id="button-cipher" class="button" type="button" value="Criptografar mensagem">
             Criptografar Mensagem
           </button>
 
-          <button id="buttondecipher" class="button" type="button" value="Descriptografar mensagem">
+          <button id="button-decipher" class="button" type="button" value="Descriptografar mensagem">
             Descriptografar Mensagem
           </button>
         </fieldset>
 
         <div>
-          <input type="submit" id="buttonsubmit" value="Enviar mensagem" />
+          <input type="submit" id="button-submit" class="submit" value="Enviar mensagem" />
         </div>
 
       </form>
     </section>
 
-    <img src="foguete.png" class="animacaofoguete">
+    <img src="foguete.png" class="animacao-foguete">
 
   </main>
 
